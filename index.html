@@ -9,25 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Particles.js background -->
+    <div id="particles-js"></div>
+    
     <header>
-        <a href="index.html" class="logo"> Charles Nortrup</a>
-        <nav>
-            <a href="index.html" class = "active">Home</a>
-            <a href="about.html"> About</a>
-            <a href="projects.html"> Projects</a>
-            <a href="resume.html"> Resume</a>
-            <a href="skills.html"> Skills</a>
-            <a href="contact.html"> Contact</a>
-        </nav>
+        <div class="header-content">
+            <a href="index.html" class="logo"> Charles Nortrup</a>
+            <nav>
+                <a href="index.html" class = "active">Home</a>
+                <a href="about.html"> About</a>
+                <a href="projects.html"> Projects</a>
+                <a href="resume.html"> Resume</a>
+                <a href="skills.html"> Skills</a>
+                <a href="contact.html"> Contact</a>
+            </nav>
+        </div>
     </header>
     <section class = "page-content">
         <div class = "hero-content">
             <h1> Hello, I'm  <span class = "highlight"> Charles Nortrup</span></h1>
             <h2> Student at M.S.O.E enrolled in B.S. of Computer Science and Early Entry M.S. of Machine Learning</h2>
             <div class="hero-actions">
-                <a href="projects.html" class="circle-link circle-primary">View<br>My Work</a>
-                <span class="connector" aria-hidden="true"></span>
-                <a href="contact.html" class="circle-link circle-secondary">Get<br>In Touch</a>
+                <a href="projects.html" class="button-link button-primary">View<br>My Work</a>
+                <a href="contact.html" class="button-link button-secondary">Get<br>In Touch</a>
             </div>
         </div>
     </section>
@@ -36,6 +40,10 @@
             <p>&copy; 2024 Charles Nortrup. All rights reserved.</p>
         </div>
     </footer>
+    
+    <!-- Particles.js script -->
+    <script src="particles.js"></script>
+    <script src="particles-config.js"></script>
 </body>
 
 </html>
