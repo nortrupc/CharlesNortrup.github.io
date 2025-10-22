@@ -61,7 +61,7 @@ header .header-content {
     align-items: center;
     width: 100%;
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .logo {
@@ -114,6 +114,12 @@ nav a::after {
 nav a:hover::after,
 nav a.active::after {
     width: 100%;
+}
+
+/* General content spacing to avoid header overlap */
+body > section,
+body > div:not(#particles-js) {
+    margin-top: 80px;
 }
 
 /* Home section styling */
@@ -333,6 +339,7 @@ nav a.active::after {
 .about-content {
     max-width: 1000px;
     margin: 0 auto;
+    padding-top: 80px;
 }
 
 .about-section {
@@ -386,6 +393,19 @@ nav a.active::after {
 .about-photo:hover {
     transform: scale(1.05);
 }
+.headshot-photo {
+    max-width: 50%;
+    max-height: 50%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.headshot-photo:hover {
+    transform: scale(1.05);
+}
+
 
 /* Responsive design for about page */
 @media (max-width: 768px) {
@@ -456,6 +476,16 @@ nav a.active::after {
     .logo {
         font-size: 1.2rem;
     }
+    
+    /* Adjust content spacing for tablets */
+    body > section,
+    body > div:not(#particles-js) {
+        margin-top: 80px;
+    }
+    
+    .page-content {
+        padding-top: 80px;
+    }
 }
 
 /* Mobile phones */
@@ -482,6 +512,16 @@ nav a.active::after {
     
     .logo {
         font-size: 1.1rem;
+    }
+    
+    /* Adjust content spacing for mobile */
+    body > section,
+    body > div:not(#particles-js) {
+        margin-top: 80px;
+    }
+    
+    .page-content {
+        padding-top: 80px;
     }
 }
 
@@ -574,14 +614,15 @@ nav a.active::after {
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 80px;
 }
 
 .contact-info {
     background: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 15px;
     backdrop-filter: blur(10px);
 }
@@ -728,7 +769,7 @@ nav a.active::after {
     
     .contact-info,
     .contact-form {
-        padding: 1.5rem;
+        padding: 1rem;
     }
     
     .social-icons {
